@@ -1,0 +1,122 @@
+html
+{
+    font-family: Calibri ;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr 2.3fr 0.5fr 1.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.7fr 0.5fr 1.6fr 1.9fr 1.5fr 1.5fr 0.3fr;
+    grid-template-areas: ". . . . . ." ". nom nom coordonées coordonées ." ". alternance alternance alternance alternance ." ". dimplomes dimplomes dimplomes infos-persos ." ". experiences experiences experiences langues ." ". compétences compétences compétences atouts ." ". informatique informatique informatique interets ." ". . . . . .";
+}
+
+
+
+.photo
+{
+    grid-area: photo;
+    margin-left: 35%;
+
+}
+
+.nom
+{
+    grid-area: nom;
+    font-size: 24px;
+    text-align: center;
+}
+
+.coordonees
+{
+    grid-area: coordonées;
+    background-color: aliceblue;
+    padding: 35px;
+
+}
+
+.alternance
+{
+    grid-area: alternance;
+    font-size: 18px;
+    text-align: center;
+    background-color: #2aabd2;
+    padding: 35px;
+}
+
+.diplomes
+{
+    grid-area: dimplomes;
+    background-color: aliceblue;
+    padding: 35px;
+}
+
+.infos-persos
+{
+    grid-area: infos-persos;
+    background-color: powderblue;
+    padding: 35px;
+}
+
+.experiences
+{
+    grid-area: experiences;
+    background-color: #2aabd2;
+    padding: 35px;
+}
+
+.langues
+{
+    grid-area: langues;
+    background-color: darkgrey;
+    padding: 35px;
+}
+
+.competences
+{
+    grid-area: compétences;
+    background-color: powderblue;
+    padding: 35px;
+}
+
+.atouts
+{
+    grid-area: atouts;
+    background-color: aliceblue;
+    padding: 35px;
+}
+
+.informatique
+{
+    grid-area: informatique;
+    background-color: aliceblue;
+    padding: 35px;
+}
+
+.interets
+{
+    grid-area: interets;
+    background-color: #2aabd2;
+    padding: 35px;
+}
+
+
+
+.moncercleplein
+{
+    display: inline-block;
+    background:#2aabd2;
+    border-radius:50%;
+    width:7px;
+    height:7px;
+    border:1px solid #000000;
+}
+
+.moncerclevide
+{
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #000000;
+}

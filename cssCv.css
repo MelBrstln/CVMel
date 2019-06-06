@@ -1,237 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <LINK rel=stylesheet type="text/css" href="cssCv.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-          crossorigin="anonymous">
-    <title>CV Mélanie Brustlein</title>
-    <link rel="stylesheet" href="cssCv.css">
-</head>
-<body>
-<div class="grid-container">
+html
+{
+    font-family: Calibri ;
+}
+
+h1
+{
+    font-size : 45px;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr 2.3fr 0.5fr 1.4fr 0.6fr;
+    grid-template-rows: 0.1fr 0.6fr 0fr 0.6fr 1fr 0.2fr 0.2fr 0.4fr;
+    grid-template-areas: ". . . . . ." ". nom nom nom coordonées ." ". alternance alternance alternance alternance ." ". dimplomes dimplomes dimplomes infos-persos ." ". experiences experiences experiences langues ." ". compétences compétences compétences atouts ." ". informatique informatique informatique interets ." ". . . . . .";
+}
+
+.marge {
+    margin: 0 0 0 10px;
+}
+
+.photo
+{
+    grid-area: photo;
+    margin-left: 35%;
+
+}
+
+.nom
+{
+    grid-area: nom;
+    text-align: center;
+    background-color: powderblue;
 
 
-    <div class="nom">
-        <h1>Mélanie Brustlein</h1>
-        <br/>
-        <h2>Technicienne développeuse Web en formation au Campus Numérique in the Alps</h2>
-        <h2>En recherche d'un contrat de professionnalisation, du 17/06/19 au 17/06/2020</h2>
-    </div>
+}
 
-    <div class="coordonees">
-        <p>90 rue des pensées<br/>38410 Chamrousse</p>
-        <p>melanie.brustlein@le-campus-numerique.fr<br/>0670449884</p>
-    </div>
+.coordonees
+{
+    grid-area: coordonées;
+    background-color: #2aabd2;
+    padding: 35px;
+    font-size: 24px;
+    text-align: center;
 
+}
 
+.alternance
+{
+    grid-area: alternance;
+    font-size: 1;
+    text-align: center;
+    background-color: #2aabd2;
+    padding: 35px;
+}
 
-    <div class="diplomes">
-        <div class="marge">
-        <h2>Diplomes et Formations</h2>
-        <ul>
-            <li>Bac Litteraire : Lycée André Maurois, Elbeuf sur Seine<br/><em> juillet 2000</em></li>
-            <br>
-            <li>Formation technicien ski : CNPC Sports, Meylan<br/><em> de 2004 à 2005</em></li>
-            <br>
-            <li>Formation Vendeur Conseiller Multisports : CNPC Sports, Meylan<br/><em> de septembre 2005 à juin 2006</em></li>
-            <br>
-            <li>Formation Technicienne Developpeuse Web : Campus Numérique in The Alps, Grenoble</li>
-        </ul>
-        </div>
-    </div>
+.diplomes
+{
+    grid-area: dimplomes;
+    background-color: aliceblue;
+    padding: 35px;
+    font-size: 20px;
+}
 
-    <div class="infos-persos">
+.infos-persos
+{
+    grid-area: infos-persos;
+  /*  background-color: powderblue;*/
+    background-color: rgb(158, 158, 158);
+    padding: 35px;
+    font-size: 20px;
+}
 
-        <div class="photo">
-            <img src="MelPhotoCV.jpg" height="200px" alt="photo de CV">
-        </div>
-        <p><span class="far fa-calendar-alt"></span> née le 26/03/1982</p>
-        <p><i class="fas fa-id-card"></i> Permis B</p>
-        <p><span class="fas fa-car"></span> Véhicule personnel</p>
+.experiences
+{
+    grid-area: experiences;
+    background-color: #2aabd2;
 
-    </div>
+    padding: 35px;
+    font-size: 20px;
 
-    <div class="experiences">
-        <div class="marge">
-        <h2>Experiences professionnelles</h2>
-        <ul>
-            <li>Hotesse de caisse : Régie des remontées mécaniques de Chamrousse <em> de décembre 2017 à avril
-                2011</em><br/>Poste saisonnier, en équipe de 10 personnes.
-                <ul><br/>
-                    <li>Accueil client</li>
-                    <li>Vente de forfaits, encaissement.</li>
-                    <li>Gestions des cas particuliers (fraudes, réclamations, forfaits défectueux)</li>
-                </ul>
-            </li>
-            <br>
+}
 
+.langues
+{
+    grid-area: langues;
+    background-color: powderblue;
+    padding: 35px;
+    font-size: 20px;
+}
 
+.competences
+{
+    grid-area: compétences;
+    background-color: rgb(158, 158, 158);
+    padding: 35px;
+    font-size: 20px;
+}
 
-            <li>Co-gérante de la piscine municipale de Saint Martin d'Uriage <em>juin 2011 - septembre 2018</em>
-                <ul><br/>
-                    <li>Gestion du personnel</li>
-                    <li>Gestion des stocks</li>
-                    <li>Petite comptabilité</li>
-                    <li>Accueil clients</li>
-                </ul>
-        </ul>
-        </div>
-    </div>
+.atouts
+{
+    grid-area: atouts;
+    background-color: aliceblue;
+    padding: 35px;
+    font-size: 20px;
+}
 
-    <div class="langues">
-        <h2>Langues</h2>
-        <p>Anglais</p>
+.informatique
+{
+    grid-area: informatique;
+    background-color: aliceblue;
+    padding: 35px;
+    font-size: 20px;
+}
 
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncerclevide"></div>
-
-        <br><p>Espagnol</p>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncerclevide"></div>
-            <div class="moncerclevide"></div>
-            <div class="moncerclevide"></div>
-            <div class="moncerclevide"></div>
-            <div class="moncerclevide"></div>
-            <div class="moncerclevide"></div>
-            <div class="moncerclevide"></div>
-
-
-    </div>
-
-    <div class="competences">
-        <div class="marge">
-        <h2>Competences</h2>
-            <p>Esprit d'analyse</p>
-
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-                <div class="moncercleplein"></div>
-
-            <p>Organisation</p>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-
-            <p>Autonome</p>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        <div class="moncercleplein"></div>
-        </div>
-    </div>
-
-
-    <div class="atouts">
-        <h2>Atouts</h2>
-        <p>Esprit d'équipe</p>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
+.interets
+{
+    grid-area: interets;
+    background-color: #2aabd2;
+    padding: 35px;
+    font-size: 20px;
+}
 
 
 
-        <br></b> <p>Créativité</p>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
+.moncercleplein
+{
+    display: inline-block;
+    background:#2aabd2;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    border:1px solid #144f60;
+}
 
-
-
-        <br><p>Ouverture d'esprit</p>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-            <div class="moncercleplein"></div>
-
-
-
-    </div>
-
-    <div class="informatique ">
-        <div class="marge">
-        <h2>Informatique</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>PHP/BDD/POO/Laravel</li>
-            <li>Javascript/jQuery/VueJS</li>
-            <li>Java</li>
-            <li>Mobile, Réseau, Git, Méthodes Agiles</li>
-        </ul>
-        </div>
-    </div>
-
-    <div class="interets">
-        <h2>Interêts</h2>
-        <p><i class="fas fa-cubes"></i> Blender et Marvelous Designer: Je m'initie à la 3D.</p>
-        <p><i class="fas fa-globe"></i> Nouvelles technologies : Je me tiens informée des dernières avancées technologiques.</p>
-        <p><i class="fas fa-hiking"></i> Randonnée et ski dans mes montagnes.</p>
-        <p><i class="fas fa-guitar"></i> Je tente de quitter le statut de débutante en guitare.</p>
-    </div>
-</div>
-
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            Melanie Brustlein.
-
-
-        </p>
-    </div>
-</footer>
-<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+.moncerclevide
+{
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #144f60;
+}

@@ -128,9 +128,9 @@ h1
     display: inline-block;
     background:#2aabd2;
     border-radius:50%;
-    width:7px;
-    height:7px;
-    border:1px solid rgb(16, 52, 166);
+    width:15px;
+    height:15px;
+    border:1px solid #144f60;
 }
 
 .moncerclevide
@@ -138,7 +138,7 @@ h1
     display: inline-block;
     background: #ffffff;
     border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    border: 1px solid rgb(16, 52, 166);
+    width: 15px;
+    height: 15px;
+    border: 1px solid #144f60;
 }

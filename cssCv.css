@@ -2,15 +2,22 @@ html
 {
     font-family: Calibri ;
 }
+
+h1
+{
+    font-size : 45px;
+}
 .grid-container
 {
     display: grid;
     grid-template-columns: 0.6fr 0.6fr 2.3fr 0.5fr 1.4fr 0.6fr;
-    grid-template-rows: 0.2fr 0.7fr 0.5fr 1.6fr 1.9fr 1.5fr 1.5fr 0.3fr;
+    grid-template-rows: 0.2fr 0.6fr 0fr 1.2fr 1.3fr 1.2fr 1.2fr 0.3fr;
     grid-template-areas: ". . . . . ." ". nom nom coordonées coordonées ." ". alternance alternance alternance alternance ." ". dimplomes dimplomes dimplomes infos-persos ." ". experiences experiences experiences langues ." ". compétences compétences compétences atouts ." ". informatique informatique informatique interets ." ". . . . . .";
 }
 
-
+.marge {
+    margin: 0 0 0 30px;
+}
 
 .photo
 {
@@ -22,22 +29,26 @@ html
 .nom
 {
     grid-area: nom;
-    font-size: 24px;
     text-align: center;
+    background-color: powderblue;
+
+
 }
 
 .coordonees
 {
     grid-area: coordonées;
-    background-color: aliceblue;
+    background-color: #2aabd2;
     padding: 35px;
+    font-size: 24px;
+    text-align: center;
 
 }
 
 .alternance
 {
     grid-area: alternance;
-    font-size: 18px;
+    font-size: 1;
     text-align: center;
     background-color: #2aabd2;
     padding: 35px;
@@ -48,6 +59,7 @@ html
     grid-area: dimplomes;
     background-color: aliceblue;
     padding: 35px;
+    font-size: 20px;
 }
 
 .infos-persos
@@ -55,6 +67,7 @@ html
     grid-area: infos-persos;
     background-color: powderblue;
     padding: 35px;
+    font-size: 20px;
 }
 
 .experiences
@@ -62,6 +75,8 @@ html
     grid-area: experiences;
     background-color: #2aabd2;
     padding: 35px;
+    font-size: 20px;
+
 }
 
 .langues
@@ -69,6 +84,7 @@ html
     grid-area: langues;
     background-color: darkgrey;
     padding: 35px;
+    font-size: 20px;
 }
 
 .competences
@@ -76,6 +92,7 @@ html
     grid-area: compétences;
     background-color: powderblue;
     padding: 35px;
+    font-size: 20px;
 }
 
 .atouts
@@ -83,6 +100,7 @@ html
     grid-area: atouts;
     background-color: aliceblue;
     padding: 35px;
+    font-size: 20px;
 }
 
 .informatique
@@ -90,6 +108,7 @@ html
     grid-area: informatique;
     background-color: aliceblue;
     padding: 35px;
+    font-size: 20px;
 }
 
 .interets
@@ -97,6 +116,7 @@ html
     grid-area: interets;
     background-color: #2aabd2;
     padding: 35px;
+    font-size: 20px;
 }
 
 

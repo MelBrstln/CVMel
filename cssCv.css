@@ -1,144 +1,113 @@
-html
-{
-    font-family: Calibri ;
+html {
+    font-family: Calibri;
+    font-size: 1.5rem;
 }
 
-h1
-{
-    font-size : 45px;
+li{
+    margin: 0.5rem 0 0 0;
 }
-.grid-container
-{
+
+.grid-container {
     display: grid;
-    grid-template-columns: 0.6fr 0.6fr 2.3fr 0.5fr 1.4fr 0.6fr;
-    grid-template-rows: 0.1fr 0.6fr 0fr 0.6fr 1fr 0.2fr 0.2fr 0.4fr;
-    grid-template-areas: ". . . . . ." ". nom nom nom coordonées ." ". alternance alternance alternance alternance ." ". dimplomes dimplomes dimplomes infos-persos ." ". experiences experiences experiences langues ." ". compétences compétences compétences atouts ." ". informatique informatique informatique interets ." ". . . . . .";
+    grid-template-columns: 0.6fr 1.4fr 1.4fr 0.6fr 1.4fr 0.6fr;
+    /*grid-template-rows: 0.2fr 0.7fr 1.6fr 1.9fr 1.5fr 1.5fr 0.3fr;*/
+    grid-template-areas: ". . . . . ." ". nom nom nom coordonées ." ". informatique informatique informatique infos-persos ." ". dimplomes dimplomes dimplomes langues ." ". compétences compétences compétences atouts ." ". experiences experiences experiences interets ." ". . . . . .";
 }
 
-.marge {
-    margin: 0 0 0 10px;
-}
-
-.photo
-{
+.photo {
     grid-area: photo;
-    margin-left: 35%;
-
 }
 
-.nom
-{
+.nom {
     grid-area: nom;
     text-align: center;
     background-color: powderblue;
-
-
+    padding: 2rem;
 }
 
-.coordonees
-{
+.coordonees {
     grid-area: coordonées;
     background-color: #2aabd2;
-    padding: 35px;
-    font-size: 24px;
-    text-align: center;
-
+    padding: 2rem;
 }
 
-.alternance
-{
+.alternance {
     grid-area: alternance;
-    font-size: 1;
+    font-size: 18px;
     text-align: center;
     background-color: #2aabd2;
-    padding: 35px;
+    padding: 2rem;
 }
 
-.diplomes
-{
+.diplomes {
     grid-area: dimplomes;
-    background-color: aliceblue;
-    padding: 35px;
-    font-size: 20px;
-}
-
-.infos-persos
-{
-    grid-area: infos-persos;
-  /*  background-color: powderblue;*/
-    background-color: rgb(158, 158, 158);
-    padding: 35px;
-    font-size: 20px;
-}
-
-.experiences
-{
-    grid-area: experiences;
     background-color: #2aabd2;
-
-    padding: 35px;
-    font-size: 20px;
-
+    padding: 2rem;
 }
 
-.langues
-{
+.infos-persos {
+    grid-area: infos-persos;
+    background-color: rgb(158, 158, 158);
+    padding: 2rem;
+}
+
+.experiences {
+    grid-area: experiences;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+.langues {
     grid-area: langues;
     background-color: powderblue;
-    padding: 35px;
-    font-size: 20px;
+    padding: 2rem;
 }
 
-.competences
-{
+.competences {
     grid-area: compétences;
     background-color: rgb(158, 158, 158);
-    padding: 35px;
-    font-size: 20px;
+    padding: 2rem;
 }
 
-.atouts
-{
+.atouts {
     grid-area: atouts;
     background-color: aliceblue;
-    padding: 35px;
-    font-size: 20px;
+    padding: 2rem;
 }
 
-.informatique
-{
+.informatique {
     grid-area: informatique;
     background-color: aliceblue;
-    padding: 35px;
-    font-size: 20px;
+    padding: 2rem;
 }
 
-.interets
-{
+.interets {
     grid-area: interets;
     background-color: #2aabd2;
-    padding: 35px;
-    font-size: 20px;
+    padding: 2rem;
 }
 
-
-
-.moncercleplein
-{
+.moncercleplein {
     display: inline-block;
-    background:#2aabd2;
-    border-radius:50%;
-    width:15px;
-    height:15px;
-    border:1px solid #144f60;
+    background: #2aabd2;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #144f60;
 }
 
-.moncerclevide
-{
+.moncerclevide {
     display: inline-block;
     background: #ffffff;
     border-radius: 50%;
     width: 15px;
     height: 15px;
     border: 1px solid #144f60;
+}
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+h1 {
+    margin-block-start: 0.11em;
 }

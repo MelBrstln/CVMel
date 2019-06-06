@@ -11,12 +11,12 @@ h1
 {
     display: grid;
     grid-template-columns: 0.6fr 0.6fr 2.3fr 0.5fr 1.4fr 0.6fr;
-    grid-template-rows: 0.2fr 0.6fr 0fr 1.2fr 1.3fr 1.2fr 1.2fr 0.3fr;
-    grid-template-areas: ". . . . . ." ". nom nom coordonées coordonées ." ". alternance alternance alternance alternance ." ". dimplomes dimplomes dimplomes infos-persos ." ". experiences experiences experiences langues ." ". compétences compétences compétences atouts ." ". informatique informatique informatique interets ." ". . . . . .";
+    grid-template-rows: 0.2fr 0.6fr 0fr 0.5fr 1fr 1.1fr 1fr 0.4fr;
+    grid-template-areas: ". . . . . ." ". nom nom nom coordonées ." ". alternance alternance alternance alternance ." ". dimplomes dimplomes dimplomes infos-persos ." ". experiences experiences experiences langues ." ". compétences compétences compétences atouts ." ". informatique informatique informatique interets ." ". . . . . .";
 }
 
 .marge {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 10px;
 }
 
 .photo
@@ -65,7 +65,8 @@ h1
 .infos-persos
 {
     grid-area: infos-persos;
-    background-color: powderblue;
+  /*  background-color: powderblue;*/
+    background-color: rgb(158, 158, 158);
     padding: 35px;
     font-size: 20px;
 }
@@ -74,6 +75,7 @@ h1
 {
     grid-area: experiences;
     background-color: #2aabd2;
+
     padding: 35px;
     font-size: 20px;
 
@@ -82,7 +84,7 @@ h1
 .langues
 {
     grid-area: langues;
-    background-color: darkgrey;
+    background-color: powderblue;
     padding: 35px;
     font-size: 20px;
 }
@@ -90,7 +92,7 @@ h1
 .competences
 {
     grid-area: compétences;
-    background-color: powderblue;
+    background-color: rgb(158, 158, 158);
     padding: 35px;
     font-size: 20px;
 }
